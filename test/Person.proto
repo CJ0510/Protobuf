@@ -1,7 +1,18 @@
 syntax = "proto3";
+import "Address.proto";
+enum Color
+{
+    Red = 0;
+    Green = 5;
+    Yellow = 6;
+    Blue = 9;
+}
+
 message Person{
     int32 id = 1;
-    bytes name = 2;
+    repeated bytes name = 2; // repeated 表示数组
     bytes sex = 3;
     int32 age = 4;
+    Address addr = 5;
+    Color color = 6;
 }

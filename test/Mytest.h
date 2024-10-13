@@ -8,7 +8,7 @@
 
 class Mytest {
 public:
-  void test();
+    void test();
 };
 
 #endif // PROTOBUF_MYTEST_H
