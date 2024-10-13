@@ -1,5 +1,5 @@
 syntax = "proto3";
-
+package Add;
 message Address{
     int32 num = 1;
     bytes addr = 2;

@@ -1,5 +1,6 @@
 syntax = "proto3";
 import "Address.proto";
+package Per;
 enum Color
 {
     Red = 0;
@@ -13,6 +14,6 @@ message Person{
     repeated bytes name = 2; // repeated 表示数组
     bytes sex = 3;
     int32 age = 4;
-    Address addr = 5;
+    Add.Address addr = 5;
     Color color = 6;
 }
